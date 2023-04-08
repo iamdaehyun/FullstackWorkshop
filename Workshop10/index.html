@@ -8,27 +8,35 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="background">
-      <div id="sun"></div>
-      <div id="buildings">
-        <div id="building_tall">
-          <div id="window1"></div>
-          <div id="window1"></div>
-          <div id="window1"></div>
-          <div id="window1"></div>
-          <div id="window2"></div>
+    <div class="background">
+      <div class="sun"></div>
+      <div class="buildings">
+        <div class="building_tall">
+          <div class="window1"></div>
+          <div class="window1"></div>
+          <div class="window1"></div>
+          <div class="window1"></div>
+          <div class="window1"></div>
+          <div class="window1"></div>
+          <div class="window1"></div>
+          <div class="window1"></div>
         </div>
-        <div id="building_short">
-          <div id="window1"></div>
-          <div id="window1"></div>
-          <div id="window2"></div>
+        <div class="building_short">
+          <div class="window1"></div>
+          <div class="window1"></div>
+          <div class="window1"></div>
+          <div class="window1"></div>
+          <div class="window1"></div>
+          <div class="window1"></div>
         </div>
       </div>
-      <div id="ground"></div>
+      <div class="ground"></div>
     </div>
-    <form action="./submitted.html">
-      <input type="text" placeholder="Name" />
-      <input type="email" placeholder="email" />
+    <form class="form" action="./submitted.html">
+      <label for="name">NAME</label>
+      <input type="text" name="name" id="name" />
+      <label for="email">EMAIL</label>
+      <input type="email" name="email" id="email" />
       <input type="submit" />
     </form>
   </body>
