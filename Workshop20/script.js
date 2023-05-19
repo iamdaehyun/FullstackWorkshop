@@ -26,7 +26,7 @@ function main() {
     // creat a list item li element
     const liElement = document.createElement("li");
     liElement.textContent =
-      user.name + " - Age: " + user.age + ", Occupation" + user.occupation;
+      user.name + " - Age: " + user.age + ", Occupation: " + user.occupation;
     ulElement.appendChild(liElement);
   }
 
