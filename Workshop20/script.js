@@ -21,7 +21,7 @@ function main() {
   const ulElement = document.createElement("ul");
 
   //Loop though the users array
-  for (const i = 0; i < users.length; i++) {
+  for (let i = 0; i < users.length; i++) {
     const user = users[i];
     // creat a list item li element
     const liElement = document.createElement("li");
