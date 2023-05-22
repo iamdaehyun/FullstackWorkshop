@@ -23,7 +23,7 @@ function main() {
   //Loop though the users array
   for (let i = 0; i < users.length; i++) {
     const user = users[i];
-    // creat a list item li element
+    // create a list item li element
     const liElement = document.createElement("li");
     liElement.textContent =
       user.name + " - Age: " + user.age + ", Occupation: " + user.occupation;
