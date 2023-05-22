@@ -12,9 +12,12 @@ class Car {
   //which returns a string containing information about the car.
 
   getDescription() {
-    return "This is a ${this.year} ${this.make} ${this.model}.";
+    return `This is a ${this.year} ${this.make} ${this.model}.`;
   }
 }
+
+const myCar = new Car("Toyota", "Camry", 2022);
+console.log(myCar.getDescription());
 
 //Define the ElectricCar function as a subclass of Car. Include
 //an additional property called range that represents the range of
