@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello World</title>
+    <!-- 첫 번째 태그는 React 라이브러리를 연결합니다. -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <!-- 두 번째 태그는 React DOM 라이브러리를 연결합니다. -->
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <!-- Don't use this in production: -->
+    <!-- 세 번째 태그는 ES6 구문을 ES5로 변환하는 데 도움을 주는 Babel을 가져옵니다. -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <!-- The first is a <div> tag that has an id of "root". -->
+    <div id="root"></div>
+    <!-- 두 번째는 이미 일부 코드가 포함된 스크립트 태그입니다. 
+    가장 먼저 나오는 함수는 React 컴포넌트입니다. 
+    함수 이름이 대문자로 시작되고 HTML 코드처럼 보이는 것을 주목하세요. 
+    이는 JSX 코드이며, 곧 배우게 될 것입니다. -->
+    <script type="text/babel">
+      function MyApp() {
+        return <h1>Hello, world!</h1>;
+      }
+
+      // 다음 세 줄은 다음과 같은 작업을 수행합니다:
+      // ID를 통해 DOM 요소를 참조합니다.
+      // ReactDOM.createRoot()를 사용하여 DOM 참조를 전달하여 루트 요소를 생성합니다.
+      // 그리고 이전에 나온 <MyApp /> 컴포넌트를 DOM에 렌더링합니다.
+
+      const container = document.getElementById("root");
+      const root = ReactDOM.createRoot(container);
+      root.render(<MyApp />);
+    </script>
+
+    <!--
+      Note: this page is a great way to try React but it's not suitable for production.
+      It slowly compiles JSX with Babel in the browser and uses a large development build of React.
+
+      Read this page for starting a new React project with JSX:
+      https://react.dev/learn/start-a-new-react-project
+
+      Read this page for adding React with JSX to an existing project:
+      https://react.dev/learn/add-react-to-an-existing-project
+    -->
+  </body>
+</html>
